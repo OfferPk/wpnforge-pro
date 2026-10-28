@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060911" />
+      <stop offset="100%" stop-color="#0e1726" />
+    </linearGradient>
+    <linearGradient id="boxGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="boxGradCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#083344" />
+      <stop offset="100%" stop-color="#0e4459" />
+    </linearGradient>
+    <linearGradient id="boxGradGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" />
+      <stop offset="100%" stop-color="#065f46" />
+    </linearGradient>
+  </defs>
+
+  <rect width="960" height="540" fill="url(#bgGrad)" />
+
+  <!-- Grid overlay -->
+  <g opacity="0.08" stroke="#38bdf8" stroke-width="1">
+    <path d="M 0,60 L 960,60 M 0,120 L 960,120 M 0,180 L 960,180 M 0,240 L 960,240 M 0,300 L 960,300 M 0,360 L 960,360 M 0,420 L 960,420 M 0,480 L 960,480" />
+    <path d="M 120,0 L 120,540 M 240,0 L 240,540 M 360,0 L 360,540 M 480,0 L 480,540 M 600,0 L 600,540 M 720,0 L 720,540 M 840,0 L 840,540" />
+  </g>
+
+  <!-- Title Section -->
+  <text x="480" y="45" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="bold" fill="#f8fafc" text-anchor="middle" letter-spacing="1">
+    WPNFORGE PRO — CCSDS 883.0-B-2 ARCHITECTURE
+  </text>
+  <text x="480" y="70" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#38bdf8" text-anchor="middle" letter-spacing="2">
+    SOIS HIGH DATA RATE WIRELESS PROXIMITY NETWORK COMMUNICATIONS (HDR-WPN)
+  </text>
+
+  <!-- Layer 1: Operational Scenarios -->
+  <rect x="80" y="100" width="800" height="60" rx="8" fill="url(#boxGrad1)" stroke="#334155" stroke-width="2" />
+  <text x="480" y="128" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600" fill="#f1f5f9" text-anchor="middle">
+    Space Mission Wireless Scenarios: Intra-Vehicular (IVW) • EVA Spacesuit • Lunar Surface • Orbital Docking
+  </text>
+  <text x="480" y="146" font-family="monospace" font-size="11" fill="#94a3b8" text-anchor="middle">
+    Astronaut xEMU Helmet Video • Pressurized Rover Telemetry • Wearable Biosensors • Chaser Telemetry
+  </text>
+
+  <!-- Binding Arrow -->
+  <line x1="480" y1="160" x2="480" y2="200" stroke="#38bdf8" stroke-width="2" />
+  <text x="480" y="185" font-family="monospace" font-size="10" fill="#38bdf8" text-anchor="middle">EDCA 4-Tier Traffic Scheduling (AC_VO / AC_VI / AC_BE / AC_BK)</text>
+
+  <!-- Layer 2: Dual Radio Stacks & Protocol Engine -->
+  <rect x="80" y="200" width="800" height="110" rx="8" fill="url(#boxGradCyan)" stroke="#0284c7" stroke-width="2" />
+  <text x="100" y="226" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="bold" fill="#38bdf8">
+    SOIS Wireless Proximity Core Protocol Engine (CCSDS 883.0-B-2)
+  </text>
+
+  <!-- Submodules -->
+  <rect x="100" y="240" width="180" height="55" rx="6" fill="#0f172a" stroke="#0369a1" stroke-width="1.5" />
+  <text x="190" y="262" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#e2e8f0" text-anchor="middle">Wi-Fi 6 (802.11ax)</text>
+  <text x="190" y="280" font-family="monospace" font-size="10" fill="#38bdf8" text-anchor="middle">OFDMA &amp; Target Wake Time</text>
+
+  <rect x="300" y="240" width="180" height="55" rx="6" fill="#0f172a" stroke="#0369a1" stroke-width="1.5" />
+  <text x="390" y="262" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#e2e8f0" text-anchor="middle">3GPP GWCN Router</text>
+  <text x="390" y="280" font-family="monospace" font-size="10" fill="#4ade80" text-anchor="middle">Multi-PLMN Core Sharing</text>
+
+  <rect x="500" y="240" width="180" height="55" rx="6" fill="#0f172a" stroke="#0369a1" stroke-width="1.5" />
+  <text x="590" y="262" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#e2e8f0" text-anchor="middle">WPA3-Enterprise</text>
+  <text x="590" y="280" font-family="monospace" font-size="10" fill="#facc15" text-anchor="middle">Suite B-192 / GCMP-256</text>
+
+  <rect x="700" y="240" width="160" height="55" rx="6" fill="#0f172a" stroke="#0369a1" stroke-width="1.5" />
+  <text x="780" y="262" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#e2e8f0" text-anchor="middle">RF Budget &amp; Doppler</text>
+  <text x="780" y="280" font-family="monospace" font-size="10" fill="#c084fc" text-anchor="middle">FSPL &amp; Carrier Recovery</text>
+
+  <!-- Layer 3: Physical Spectrum & Channel Access -->
+  <rect x="80" y="340" width="800" height="70" rx="8" fill="url(#boxGrad1)" stroke="#334155" stroke-width="2" />
+  <text x="480" y="364" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" fill="#94a3b8" text-anchor="middle">
+    Physical Space Radio Frequency Allocations (SFCG &amp; ITU Radio Regulations)
+  </text>
+  <g font-family="monospace" font-size="11" fill="#cbd5e1" text-anchor="middle">
+    <text x="210" y="390">2.4 GHz ISM / S-Band Proximity</text>
+    <text x="480" y="390">5.18 - 5.825 GHz High-Rate UNII</text>
+    <text x="750" y="390">24.25 - 27.5 GHz 5G mmWave</text>
+  </g>
+
+  <!-- Layer 4: Space Wireless Proximity Endpoints -->
+  <g>
+    <!-- Node 1: Artemis xEMU -->
+    <rect x="80" y="440" width="240" height="65" rx="6" fill="url(#boxGradGreen)" stroke="#10b981" stroke-width="1.5" />
+    <text x="200" y="465" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#ecfdf5" text-anchor="middle">Artemis xEMU Spacesuit</text>
+    <text x="200" y="482" font-family="monospace" font-size="10" fill="#a7f3d0" text-anchor="middle">802.11ax • 5 GHz • 600 Mbps</text>
+
+    <!-- Node 2: Lunar Terrain Vehicle -->
+    <rect x="360" y="440" width="240" height="65" rx="6" fill="url(#boxGradGreen)" stroke="#10b981" stroke-width="1.5" />
+    <text x="480" y="465" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#ecfdf5" text-anchor="middle">Lunar Terrain Vehicle</text>
+    <text x="480" y="482" font-family="monospace" font-size="10" fill="#a7f3d0" text-anchor="middle">3GPP 5G NR • GWCN Shared</text>
+
+    <!-- Node 3: Logistics Docking Chaser -->
+    <rect x="640" y="440" width="240" height="65" rx="6" fill="url(#boxGradGreen)" stroke="#10b981" stroke-width="1.5" />
+    <text x="760" y="465" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#ecfdf5" text-anchor="middle">Docking Logistics Chaser</text>
+    <text x="760" y="482" font-family="monospace" font-size="10" fill="#a7f3d0" text-anchor="middle">802.11ax • Orbital Proximity</text>
+  </g>
+
+  <!-- Connectors -->
+  <line x1="480" y1="310" x2="480" y2="340" stroke="#38bdf8" stroke-width="2" />
+  <line x1="200" y1="410" x2="200" y2="440" stroke="#10b981" stroke-width="2" stroke-dasharray="3,3" />
+  <line x1="480" y1="410" x2="480" y2="440" stroke="#10b981" stroke-width="2" stroke-dasharray="3,3" />
+  <line x1="760" y1="410" x2="760" y2="440" stroke="#10b981" stroke-width="2" stroke-dasharray="3,3" />
+</svg>
